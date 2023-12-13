@@ -13,7 +13,7 @@ import SuccessPage from "./successPage/SuccessPage.jsx";
 import PageNotFound from "./404/PageNotFound.jsx";
 import Cart from "./cart/Cart.jsx";
 import Checkout from "./checkout/Checkout.jsx";
-import Page_four from "./legalPages/Page_four.jsx";
+// import Page_four from "./legalPages/Page_four.jsx";
 
 export {
   Home,
@@ -27,7 +27,7 @@ export {
   Page_one,
   Page_two,
   Page_three,
-  Page_four,
+  // Page_four,
   SuccessPage,
   PageNotFound,
   Cart,
