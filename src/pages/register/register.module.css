@@ -1,0 +1,274 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  transition: ease-in 0.3s;
+  padding: 20px;
+  height: 100vh;
+  justify-content: center;
+}
+
+.imgContainer {
+  display: none;
+}
+
+.title {
+  color: var(--textColor);
+  font-size: 2rem;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.authGoogle_faceBook {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 70%;
+}
+
+.span {
+  display: none;
+  font-size: 2.1rem;
+  font-weight: 400;
+  color: var(--softTextColor);
+  opacity: 0.8;
+}
+
+.socialBtn {
+  font-family: inherit;
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 0.9rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--bg);
+  color: var(--textColor);
+  text-align: center;
+  white-space: nowrap;
+  justify-content: center;
+}
+.socialFacebookIcon {
+  color: #4267b2;
+}
+
+.group {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.input {
+  font-size: 16px;
+  padding: 10px 0px 10px 5px;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #757575;
+  color: var(--textColor);
+}
+.input:focus {
+  outline: none;
+}
+
+/* LABEL ======================================= */
+.label {
+  color: #999;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+}
+
+/* active state */
+.input:focus ~ .label,
+.input:valid ~ .label {
+  top: -5px;
+  font-size: 12px;
+  color: var(--softTextColor);
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: var(-bg);
+  transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+}
+.bar:before {
+  left: 50%;
+}
+.bar:after {
+  right: 50%;
+}
+
+/* active state */
+.input:focus ~ .bar:before,
+.input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.passwordContainer {
+  position: relative;
+}
+
+.pIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--textColor);
+  font-size: 1.3rem;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.button {
+  font-family: inherit;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 17px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--softBg);
+  color: var(--textColor);
+}
+
+.desc {
+  color: var(--softTextColor);
+}
+
+.descSpan {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.descSpan:hover {
+  text-decoration: underline;
+  transition: ease-in-out 0.3s;
+}
+
+.btn:active {
+  transform: scale(0.99);
+  transition: ease 0.2s;
+}
+
+.iconContainer {
+  display: flex;
+  position: sticky;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  top: 0;
+  background-color: var(--bg);
+}
+
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--textColor);
+}
+
+.logo {
+  height: 35px;
+}
+
+.loading {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.loading > img {
+  width: 50px;
+}
+
+
+.logoContainer{
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img{
+  width: 100px;
+}
+
+.lbtn{
+  text-align: center;
+  padding:  0.5rem;
+  background-color: transparent;
+  color: var(--textColor);
+  outline:2px solid var( --secondColor);
+  font-family: inherit;
+  border-radius: 5px;
+  border: none;
+  width: 100px;
+  margin: 0 auto;
+}
+
+
+.sbtn{
+  text-align: center;
+  padding:  0.5rem;
+  background-color: var( --secondColor);
+  color: var(--textColor);
+  font-family: inherit;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 100px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 500px) {
+  .main {
+    min-width: 450px;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}

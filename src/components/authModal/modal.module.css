@@ -1,0 +1,124 @@
+.container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  background: rgb(97 97 97 / 28%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.2px);
+  -webkit-backdrop-filter: blur(5.2px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: ease-in 0.3s;
+
+}
+
+.show{
+  z-index: 10;
+  opacity: 1;
+  transition: ease-in 0.3s;
+}
+
+.modalContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.04) 1.95px 1.95px 2.6px;
+  z-index: 12;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.modalContainer::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+.modalContainer::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgb(255, 255, 255);
+}
+
+.modalContainer::-webkit-scrollbar-thumb {
+  background-color: rgb(44, 42, 42);
+  outline: 1px solid rgb(255, 255, 255);
+}
+
+/* .modalContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/plant.png");
+  background-repeat: no-repeat;
+  background-position: 280px 260px;
+  background-size: 200px;
+  opacity: 0.5;
+  z-index: 1;
+} */
+
+.imgContainer {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  overflow: hidden;
+  background-color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 95px;
+  left: 15px;
+}
+
+.imgContainer > img {
+  width: 50px;
+  height: 50px;
+}
+
+.closeIcon {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.input {
+  margin-top: 0.5rem;
+  width: 100%;
+  border-radius: 8px;
+  background: #f6f6f6;
+  display: flex;
+  padding: 5px 10px;
+  align-items: center;
+  gap: 12px;
+  color: var(--textColor);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  outline: none;
+  border: none;
+  font-family: inherit;
+}
+
+.button{
+    color: #f6f6f6;
+}
+
+.button:hover {
+  color: rgb(37 99 235);
+  outline: 1px solid rgb(37 99 235 / var(--tw-border-opacity));
+  background-color: var(--bg);
+}
+
+@media screen and (min-width: 500px) {
+  .modalContainer {
+    width: 450px;
+    height: 600px;
+    margin: 0 auto;
+  }
+}

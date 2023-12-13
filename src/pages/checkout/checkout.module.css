@@ -1,0 +1,54 @@
+.heading {
+  padding-left: 1rem;
+  border-left: 5px solid var(--secondColor);
+  margin: 1.5rem 0.3rem;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.input {
+  border-radius: 8px;
+  background: #f6f6f6;
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 12px;
+  color: var(--textColor);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  outline: none;
+  border: none;
+  order: 2;
+}
+
+.input::placeholder {
+  font-size: 0.9rem;
+  color: var(--textColor);
+}
+
+.inputContainer {
+  width: 100%;
+}
+
+.badge {
+  position: absolute;
+  top: -9px;
+  right: -9px;
+  width: 25px;
+  height: 25px;
+  background-color: #8b35fd;
+  color: var(--bg);
+  font-size: 0.9rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media screen and (min-width:650px ) {
+  .paymentContainer{
+    width: 500px;
+    padding: 1.5rem;
+  }
+}

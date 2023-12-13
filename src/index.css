@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --bg: #f5f5f5;
+  --heroSectionBg: #dfe4e1;
+  --textColor: #242323;
+  --headingColor: #000000;
+  --secondColor: #e6c744;
+  --softBg: #f0f0f0;
+  --softTextColor: #7f7f7f;
+  --btnBg:#000;
+  --btnColor:#FEFEFE,
+  --accent: #007ECC;
+  --accent-2: #EC2F4B;
+  --text: #003f66;
+  --text-hover: var(--accent);
+  --text-active: #FFFFFF;
+  --border-width: 0.125em;
+  --footerBg: #0F0F0F;
+  --tw-border-opacity: 1
+}
+
+.light {
+  --bg: #fff;
+  --textColor: black;
+  --softBg: #f0f0f0;
+  --softTextColor: #626262;
+  --registerBtnBg: #cbccce;
+  --commentShowReplyText: #362fd9;
+  --iconTransform: 0px;
+  --btnBgHover: #272829;
+  --btnTextHover: #f7f5f2;
+  --blockQuote: black;
+  --codeBg: #0d0d0d;
+  --codeColor: #f5f5f5;
+  transition: ease-in-out 0.3s;
+}
+
+.dark {
+  --bg: #0a0b0c;
+  --textColor: #ddd;
+  --softBg: #0e0f13;
+  --softTextColor: #c0c5d0;
+  --registerBtnBg: #272829;
+  --commentShowReplyText: #6178f3;
+  --iconTransform: 23px;
+  --btnBgHover: #f7f5f2;
+  --btnTextHover: #272829;
+  --blockQuote: #f7f5f2;
+  --codeBg: #f5f5f5;
+  --codeColor: #272829;
+  transition: ease-in-out 0.3s;
+}
+
+body::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.main{
+  flex: 1;
+  overflow: hidden;
+}
+
+
+._carousel_1qgep_77{
+  height: 500px;
+}
+
+._innerCarousel_1qgep_69 {
+  height:-webkit-fill-available;
+}
+
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  background-color: #0000005e;
+  border-radius: 100%;
+padding: 0.3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .ant-carousel{
+    width: 50%;
+  }
+
+}

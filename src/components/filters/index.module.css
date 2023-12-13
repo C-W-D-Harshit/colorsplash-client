@@ -1,0 +1,74 @@
+
+.filterBtn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.5rem;
+    background-color: var(--softBg);
+    color: var(--softTextColor);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  .modal {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 10px;
+    position: absolute;
+    padding: 10px;
+    margin: 1.2rem;
+    background-color: var(--softBg);
+    border-radius: 10px;
+    left: 0;
+    right: 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 300px;
+    top: 50px;
+    z-index: -1;
+    opacity: 0;
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.5s;
+  }
+  
+  .showModal {
+    opacity: 1;
+    z-index: 1;
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.5s;
+  }
+  
+  .box{
+      min-width: 250px;
+      max-width: 250px;
+      padding: 0.5rem;
+      outline: 1px var(--softTextColor) solid;
+  }
+  
+  .headingContainer > h1{
+    font-size: 1.3rem;
+  }
+  
+  .inputItem{
+    display: grid;
+    gap: 10px;
+  }
+  
+  .filterList{
+    overflow-y: scroll;
+    display: grid;
+    height: 200px;
+  }
+  
+  .filterList::-webkit-scrollbar {
+    width: 0.3em;
+  }
+  
+  .filterList::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .filterList::-webkit-scrollbar-thumb {
+    background-color: #8A33FD;
+    outline: 1px solid slategrey;
+  }
+  

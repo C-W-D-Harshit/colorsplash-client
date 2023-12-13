@@ -1,0 +1,232 @@
+.container {
+    padding: 10px;
+    margin: 2rem 0 5rem 0;
+  }
+  
+  .titleContainer {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--textColor);
+  }
+  
+  .desc {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--bg);
+  }
+  .descs{
+    font-size: 1rem;
+    font-weight: 400;
+    color:var(--textColor)
+  }
+  .formContainer {
+    margin-top: 2rem;
+    background-color: var(--softBg);
+    color: var(--softTextColor);
+  }
+  
+  .group {
+    position: relative;
+    margin-bottom: 45px;
+  }
+  
+  .input {
+    font-size: 16px;
+    padding: 10px 0px 10px 5px;
+    background-color: transparent;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #757575;
+    color: var(--textColor);
+  }
+  .input:focus {
+    outline: none;
+  }
+  
+  /* LABEL ======================================= */
+  .label {
+    color: #999;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+  }
+  
+  /* active state */
+  .input:focus ~ .label,
+  .input:valid ~ .label {
+    top: -5px;
+    font-size: 12px;
+    color: var(--textColor);
+  }
+  
+  /* BOTTOM BARS ================================= */
+  .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  .bar:before,
+  .bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: var(-bg);
+    transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+  }
+  .bar:before {
+    left: 50%;
+  }
+  .bar:after {
+    right: 50%;
+  }
+  
+  /* active state */
+  .input:focus ~ .bar:before,
+  .input:focus ~ .bar:after {
+    width: 50%;
+  }
+  
+  .textarea {
+    height: 100px;
+  }
+  
+  .btnContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .btn {
+    font-family: inherit;
+    text-align: center;
+    width: 170px;
+    font-size: 15px;
+    text-transform: capitalize;
+    background-color: var(--textColor);
+    color: var(--textColor);
+    border: 1px solid #00000054;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+    color: var(--bg);
+    background-color: transparent;
+    background-color: #8A33FD;
+  }
+  
+  .section_two {
+    margin-top: 2rem;
+    background-color: var(--textColor);
+    border-radius: 5px;
+    color: var(--bg);
+    padding: 2rem 1rem;
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+  }
+  
+  .secTitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .links {
+    color: var(--bg);
+  }
+  
+  .icons {
+    font-size: 1.5rem;
+  }
+  
+  .contactInfoContainer {
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+  }
+  
+  .socialConatiner {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-color: var(--softTextColor);
+    transition: ease 0.3s;
+  }
+  
+  .sicon {
+    color: var(--bg);
+  }
+  
+  .li:hover {
+    background-color: var(--bg);
+  }
+  
+  .li:hover .sicon {
+    color: var(--textColor);
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .titleContainer {
+      margin-bottom: 3rem;
+    }
+    .formContainer {
+      width: 950px;
+      margin: 0 auto;
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      justify-content: space-between;
+      border-radius: 5px;
+    }
+  
+    .section_one {
+      width: 50%;
+      /* flex: 1; */
+    }
+  
+    .section_two {
+      width: 40%;
+      order: -1;
+      margin-top: 0;
+    }
+  }
+  

@@ -1,0 +1,39 @@
+/* .container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--footerBg);
+  margin-top: auto;
+} */
+
+
+.img{
+  width: 100px;
+}
+
+
+.flexcontainer {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flexitemleft {
+  padding: 10px;
+  flex: 50%;
+}
+
+.flexitemright {
+  padding: 10px;
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flexcontainer {
+    flex-direction: column;
+  }
+}
