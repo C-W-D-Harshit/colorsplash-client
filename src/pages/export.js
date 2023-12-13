@@ -9,12 +9,11 @@ import Contact from "./contactus/Contact.jsx";
 import Page_one from "./legalPages/Page_one.jsx";
 import Page_two from "./legalPages/Page_two.jsx";
 import Page_three from "./legalPages/Page_three.jsx";
-import Page_four from "./legalPages/Page_four.jsx";
 import SuccessPage from "./successPage/SuccessPage.jsx";
 import PageNotFound from "./404/PageNotFound.jsx";
 import Cart from "./cart/Cart.jsx";
 import Checkout from "./checkout/Checkout.jsx";
-
+import Page_four from "./legalPages/Page_four.jsx";
 
 export {
   Home,
